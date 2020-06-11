@@ -1,0 +1,1305 @@
+{
+  "intents": [
+    {
+      "intent": "General_contact_to_Agent",
+      "examples": [
+        {
+          "text": "are any agents availabe now"
+        },
+        {
+          "text": "can u book me an appointment with any agent"
+        },
+        {
+          "text": "how can i contact an agent"
+        },
+        {
+          "text": "which agent i need to contact"
+        }
+      ],
+      "description": "Request a human agent"
+    },
+    {
+      "intent": "Customer_care_store_hours",
+      "examples": [
+        {
+          "text": "i just want to know about the store hours"
+        },
+        {
+          "text": "what about the store availability"
+        },
+        {
+          "text": "will the store be working on holidays"
+        },
+        {
+          "text": "what are the store hours"
+        }
+      ],
+      "description": "find business hours"
+    },
+    {
+      "intent": "Customer_care_appointments",
+      "examples": [
+        {
+          "text": "can you book an appointment for me"
+        },
+        {
+          "text": "what is the procedure for getting an appointment"
+        },
+        {
+          "text": "can u allot a appointment for me"
+        },
+        {
+          "text": "how can i get the appointment"
+        }
+      ],
+      "description": "Schedule or manage an in- store appointment"
+    },
+    {
+      "intent": "cancel",
+      "examples": [
+        {
+          "text": "Cancel request"
+        },
+        {
+          "text": "Cancel"
+        }
+      ],
+      "description": "cancel the current request"
+    },
+    {
+      "intent": "Greeting_sir",
+      "examples": [
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "how are you?"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Good afternoon"
+        }
+      ],
+      "description": "greetings"
+    },
+    {
+      "intent": "Product_Information",
+      "examples": [
+        {
+          "text": "which product do u suggest"
+        },
+        {
+          "text": "How do i increase ram"
+        },
+        {
+          "text": "what the system speed"
+        },
+        {
+          "text": "what about system security"
+        },
+        {
+          "text": "what are the available ports"
+        },
+        {
+          "text": "details of computer display"
+        },
+        {
+          "text": "system cofigurations"
+        },
+        {
+          "text": "battery pack"
+        },
+        {
+          "text": "microsoft id"
+        },
+        {
+          "text": "bluetooth connection"
+        },
+        {
+          "text": "hdmi"
+        },
+        {
+          "text": "using the keyboard"
+        },
+        {
+          "text": "bios utility"
+        },
+        {
+          "text": "connectors"
+        },
+        {
+          "text": "recovery"
+        },
+        {
+          "text": "How do i access the settings"
+        },
+        {
+          "text": "How do i set the time"
+        }
+      ],
+      "description": "Askig For Product Information"
+    },
+    {
+      "intent": "Customer_care_store_Location",
+      "examples": [
+        {
+          "text": "nearby stores"
+        },
+        {
+          "text": "nearby store"
+        },
+        {
+          "text": "where is the nearby store available"
+        },
+        {
+          "text": "how many stores are available nearby"
+        },
+        {
+          "text": "where is the main store located"
+        },
+        {
+          "text": "Im in search of a customer care store"
+        },
+        {
+          "text": "main store"
+        }
+      ],
+      "description": "locate a physical store location or an address"
+    },
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "can u help me"
+        },
+        {
+          "text": "i need some help"
+        },
+        {
+          "text": "can u explain me about this"
+        },
+        {
+          "text": "what is this?"
+        },
+        {
+          "text": "can u sort this out"
+        }
+      ],
+      "description": "ask for help"
+    },
+    {
+      "intent": "reply",
+      "examples": [
+        {
+          "text": "no"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "thanks for your help"
+        },
+        {
+          "text": "nothing"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        }
+      ],
+      "description": "Thanking"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "task",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "task",
+          "synonyms": [
+            "tasks",
+            "duties",
+            "challenge",
+            "job"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "zip_code",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ap zip",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "landmark",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "pvp square",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "D Address Mall",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "landmark",
+          "synonyms": [
+            "machavaram",
+            "bhavanipuram",
+            "vijayawada",
+            "srr college"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Grand central",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "not needed",
+            "no need"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "yeah sure",
+            "yeah",
+            "okay",
+            "sure",
+            "sure why not"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_appointment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Can u book an appointment for me",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "I want to book an appointment",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "How can i get the store appointment",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Store_Hours",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "store working hours",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "store close down",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "store closing time",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "store availability",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "store opening time",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "agent_appointment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "any agents available for help now",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "how to contact an agent",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "how do i get appointment with the agent",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "can u book an appointment with the agent",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "how many agents are availabe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "which agent to be contacted",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "holiday",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "christmas eve",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "independence day",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ramzan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "diwali",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "holiday",
+          "synonyms": [
+            "holidays",
+            "vacation",
+            "festive",
+            "thanksgiving",
+            "getaway",
+            "vacances"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Store_Locations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Im in search of customer store",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Store Location",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Main Store",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nearby store",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nearby Stores",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "How many stores are there",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "help",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "can u help me",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "i need some help",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "services",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "services",
+          "synonyms": [
+            "facilities",
+            "care",
+            "offices",
+            "solutions",
+            "companies",
+            "consulting"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "which services are available now",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good morning",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good afternoon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "thanking",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no im good",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thanks for your help",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thanks",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nothing",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/178w1a1260%40vrsiddhartha.ac.in_dev/Functionactions/Function%20actions.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Is there any issue ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1590561739255",
+      "conditions": "@reply:No",
+      "dialog_node": "response_8_1590561784570",
+      "previous_sibling": "response_8_1590561760703"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "okay done sir...."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1590561739255",
+      "conditions": "@reply:Yes",
+      "dialog_node": "response_8_1590561760703"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "We have different agents for different issues you may contact the agent suitable for the issue you are facing"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590559999016",
+      "conditions": "@agent_appointment:(which agent to be contacted)",
+      "dialog_node": "response_9_1590560471007",
+      "previous_sibling": "response_3_1590560445065"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "We have up to 12 Agents available now"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590559999016",
+      "conditions": "@agent_appointment:(how many agents are availabe)",
+      "dialog_node": "response_3_1590560218691",
+      "previous_sibling": "response_5_1590560079495"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Thats simple sir,we can directly contact Agent from the store portal"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590559999016",
+      "conditions": "@agent_appointment:(how do i get appointment with the agent)",
+      "dialog_node": "response_8_1590560396896",
+      "previous_sibling": "response_3_1590560218691"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "agents details are available in the store portal"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590559999016",
+      "conditions": "@agent_appointment:(how to contact an agent)",
+      "dialog_node": "response_3_1590560445065",
+      "previous_sibling": "response_8_1590560396896"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "sure sir ...I will  book the appointment with the agent  "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590559999016",
+      "conditions": "@agent_appointment:(can u book an appointment with the agent)",
+      "dialog_node": "response_5_1590560079495",
+      "previous_sibling": "response_2_1590560027531"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes sir, we have up to 12 Agents available now"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1590559999016",
+      "conditions": "@agent_appointment:(any agents available for help now)",
+      "dialog_node": "response_2_1590560027531"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "how can i help you"
+              },
+              {
+                "text": "what can i do for u?"
+              },
+              {
+                "text": "may i know the problem you r facing?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1590141903674",
+      "disabled": true,
+      "conditions": "#",
+      "dialog_node": "response_5_1590253283218",
+      "previous_sibling": "node_1_1590253369838"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1590141903674",
+      "disabled": true,
+      "dialog_node": "response_5_1590253326496",
+      "previous_sibling": "response_5_1590253283218"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "parent": "node_6_1590141903674",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greeting_sir",
+      "dialog_node": "node_1_1590253369838"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Okay sir ...I'm always available for your need"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590495344790",
+      "conditions": "@thanking:nothing",
+      "dialog_node": "response_5_1590562153800",
+      "previous_sibling": "response_10_1590562115052"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm happy that i'm helpful to u,What else can i do for you!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590495344790",
+      "conditions": "@thanking:thanks",
+      "dialog_node": "response_10_1590562115052"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good Evening sir,how can i help you"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1590253369838",
+      "conditions": "@Greetings:(Good evening)",
+      "dialog_node": "response_10_1590253572797",
+      "previous_sibling": "response_4_1590253546223"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A very Good Afternoon sir ,do u have any problem"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1590253369838",
+      "conditions": "@Greetings:(Good afternoon)",
+      "dialog_node": "response_4_1590253546223",
+      "previous_sibling": "response_10_1590253408126"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning sir! what can i do for you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1590253369838",
+      "conditions": "@Greetings:(Good morning)",
+      "dialog_node": "response_10_1590253408126"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Working hours of the store are 13 hrs a Day"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590332476743",
+      "conditions": "@Store_Hours:(store working hours)",
+      "dialog_node": "response_5_1590332556522",
+      "previous_sibling": "response_10_1590332529565"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Stores are closed at night 11 PM"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590332476743",
+      "conditions": "@Store_Hours:(store closing time)",
+      "dialog_node": "response_10_1590332529565",
+      "previous_sibling": "response_6_1590332493333"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Stores are Opened from morning 9 AM"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1590332476743",
+      "conditions": "@Store_Hours:(store opening time)",
+      "dialog_node": "response_6_1590332493333"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "yeah sure.....do u want me to help you in booking the appointment"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590559504734",
+      "conditions": "@store_appointment:(I want to book an appointment)",
+      "dialog_node": "response_4_1590559866032",
+      "previous_sibling": "response_7_1590559820176"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "sure sir....i will book an appointmet for u and farword the details to your dashboad"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590559504734",
+      "conditions": "@store_appointment:(Can u book an appointment for me)",
+      "dialog_node": "response_7_1590559927016",
+      "previous_sibling": "response_4_1590559866032"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590559504734",
+      "dialog_node": "response_4_1590559976322",
+      "previous_sibling": "response_7_1590559927016"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Its simple sir ,just login to the store portal and request for the appointment"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590559504734",
+      "conditions": "@store_appointment:(How can i get the store appointment)",
+      "dialog_node": "response_7_1590559820176"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Try Again Later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1590219996597",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1590220095280",
+      "previous_sibling": "response_9_1590220093467"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<?$webhook_result_1.passages[0].passage_text?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1590219996597",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_9_1590220093467"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_7_1590219755244",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_1_1590252489906",
+      "previous_sibling": "response_8_1590559376448"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Its closed on holidays"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1590219755244",
+      "conditions": "@Store_Hours:(store close down)",
+      "dialog_node": "response_6_1590332403349",
+      "previous_sibling": "node_9_1590332476743"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The store is available from morning 10 AM to Night 10 PM"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1590219755244",
+      "conditions": "@Store_Hours:(store availability)",
+      "dialog_node": "response_8_1590559376448",
+      "previous_sibling": "response_6_1590332403349"
+    },
+    {
+      "type": "standard",
+      "title": "Store timings",
+      "parent": "node_7_1590219755244",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Customer_care_store_hours",
+      "dialog_node": "node_9_1590332476743"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "We have almost 15 stores nearby"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1590219891433",
+      "conditions": "@Store_Locations:(Nearby Stores)",
+      "dialog_node": "response_8_1590559282804",
+      "previous_sibling": "response_3_1590559178313"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A store nearby  is Located opp to the PVP mall "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1590219891433",
+      "conditions": "@Store_Locations:(nearby store)",
+      "dialog_node": "response_3_1590559178313",
+      "previous_sibling": "response_5_1590559117871"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The Main store is Located beside the Grand Central Mall "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1590219891433",
+      "conditions": "@Store_Locations:(Main Store)",
+      "dialog_node": "response_5_1590559117871",
+      "previous_sibling": "response_9_1590557395143"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "yeah sure.....Do u want me to find out a nearby store or the Main store"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1590219891433",
+      "conditions": "@Store_Locations:(Im in search of customer store)",
+      "dialog_node": "response_9_1590557395143"
+    },
+    {
+      "type": "standard",
+      "title": "thanks",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Thanks",
+      "dialog_node": "node_2_1590495344790",
+      "previous_sibling": "node_5_1590561739255"
+    },
+    {
+      "type": "standard",
+      "title": "Ask About Product",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Product_Information",
+      "dialog_node": "node_6_1590219996597",
+      "previous_sibling": "node_9_1590559999016"
+    },
+    {
+      "type": "standard",
+      "title": "Where is the store Located",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Customer_care_store_Location",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1590219891433",
+      "previous_sibling": "node_6_1590141903674"
+    },
+    {
+      "type": "standard",
+      "title": "greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello sir! how can i help you!"
+              },
+              {
+                "text": "Hello sir! what can i do for u?"
+              },
+              {
+                "text": "Hello sir! may i know the problem you are facing?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Greeting_sir",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1590141903674",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1590495344790",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "agent appointment",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General_contact_to_Agent",
+      "dialog_node": "node_9_1590559999016",
+      "previous_sibling": "node_10_1590559504734"
+    },
+    {
+      "type": "standard",
+      "title": "reply",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#reply",
+      "dialog_node": "node_5_1590561739255",
+      "previous_sibling": "node_6_1590219996597"
+    },
+    {
+      "type": "standard",
+      "title": "Store Appointment",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Customer_care_appointments",
+      "dialog_node": "node_10_1590559504734",
+      "previous_sibling": "node_7_1590219755244"
+    },
+    {
+      "type": "standard",
+      "title": "What are the working hours",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Customer_care_store_hours",
+      "dialog_node": "node_7_1590219755244",
+      "previous_sibling": "node_1_1590219891433"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Chatbot",
+  "language": "en",
+  "description": ""
+}
