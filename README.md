@@ -15,4 +15,4 @@ Watson Assistant Preview :  https://web-chat.global.assistant.watson.cloud.ibm.c
 
 Node-Red Dashboard link after deploying :  https://zaheerabdul.eu-gb.mybluemix.net/ui/#!/0?socketid=qqu8vjQnhlPR8secAAAt
 
-Youtube video link:
+Youtube video link: https://youtu.be/AVYtUTRqkYo
